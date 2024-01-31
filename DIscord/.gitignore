@@ -1,0 +1,13 @@
+# .gitignore
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+pybot/
+*.pybot
+.env
+
+# VS Code settings
+.vscode/
