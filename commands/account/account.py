@@ -5,7 +5,6 @@ from .account_embed import create_account_embed
 
 URL = "https://live.trading212.com/api/v0/equity/account/cash"
 HEADERS = {"Authorization": os.getenv('AUTHORIZATION')}
-# HEADERS = {"Authorization": "30626754ZIHAnjoJRqxxVkmwiWZcBeHgKNPiT"}
 
 @commands.command()
 @commands.has_permissions(administrator=True)

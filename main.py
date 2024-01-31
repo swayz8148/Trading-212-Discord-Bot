@@ -22,6 +22,8 @@ bot.add_command(send_account)
 
 @bot.event
 async def on_ready():
-    portfolio.start(bot)
+    guild_id = int(os.getenv('GUILD_ID'))
+    guild = bot.get_guild(guild_id)
+    portfolio.start(guild, bot)
 
 bot.run(os.getenv('BOT_TOKEN'))

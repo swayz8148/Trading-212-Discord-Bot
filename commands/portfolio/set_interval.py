@@ -1,6 +1,7 @@
 from discord.ext import commands
 from commands.portfolio.portfolio_loop import portfolio
 
+
 @commands.command()
 @commands.has_permissions(administrator=True)
 async def set_interval(ctx, minutes: int):
